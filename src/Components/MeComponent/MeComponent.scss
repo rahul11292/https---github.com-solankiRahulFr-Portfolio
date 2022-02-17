@@ -1,0 +1,235 @@
+@import "./../../var.scss";
+.meComponentContainer {
+  margin: 0px 1em 0px 1em;
+  height: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .profilePicture {
+    width: 20%;
+    .picture{
+        width:90%;
+    }
+    .logosLink {
+      margin-bottom: 1em;
+        img{
+            width:2.5rem;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 1em;
+            }
+        }
+    }
+  }
+  .aboutme {
+    font-size: 2rem;
+    margin-left: 1.5em;
+    margin-top: 0px;
+    width: 65%;
+    transform: rotate(-2.5deg);
+  }
+  h2 {
+    color: $colorTextBlue;
+    margin: 0px;
+  }
+  //     .inBox{
+  //         border: 1px solid black;
+  //         border-width: 3px 4px 3px 5px;
+  //   border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+  //   transform: rotate(1deg);
+  //   height: 5em;
+  //   border-color: black;
+  //     }
+
+  .inBox {
+    ul {
+      margin: 0px;
+      padding: 0px;
+      overflow-wrap: break-word;
+      li {
+        display: block;
+        background-image: url("./../../images/star.svg");
+        background-repeat: no-repeat;
+        background-position: left 11px;
+        background-size: 25px;
+        padding-left: 25px;
+      }
+      .insideBrackets {
+        display: flex;
+        background-position: left 92px;
+        align-items: center;
+        p {
+          padding: 0px;
+          margin: 0px;
+        }
+        .items {
+          margin-left: 1.8em;
+          position: relative;
+          color: $colorTextBlue;
+          text-align: center;
+          img {
+            position: absolute;
+            width: 2.4em;
+            left: -50px;
+          }
+        }
+      }
+      .groupBracket {
+        display: flex;
+        gap: 3em;
+        
+      }
+    }
+  }
+}
+
+
+.emailContact{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  transform: rotate(-2deg) scale(1);
+  input[type="email"]{
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #1d1d1d;
+    border-image: url('./../../images/button.svg') 10 10 10  14 fill ;
+    font-family: 'Caveat', cursive;
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 0px;
+height: 25px;
+
+width: 21rem;
+    &:active, &:focus{
+      outline: none;
+    }
+    &::placeholder{
+      color:red;
+      opacity: 0.75;
+    }
+  }
+  input[type="submit"]{
+    position: absolute;
+    background-image: url('./../../images/mail.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    right: 10px;
+    top: 8px;
+    transition: 0.2s ease-in-out;
+    
+  &:hover{
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+    top: 6px;
+    transition: 0.2s ease-in-out;
+  }
+  }
+}
+
+
+//////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1007px) and (min-width: 641px){
+  .meComponentContainer .aboutme {
+    font-size: 1.6rem;
+    gap:2em;
+    width: 80%;
+  }
+  .meComponentContainer{
+    flex-direction: column;
+  }
+  .profilePicture {
+    width: 30% !important;
+  }
+  .meComponentContainer .inBox ul .insideBrackets {
+    display: flex;
+    background-position: left 74px;}
+    .meComponentContainer .inBox ul .insideBrackets .items img {
+      left: -42px;}
+}
+
+@media screen and (max-width: 640px) {
+
+  .meComponentContainer .profilePicture .picture {
+    width: 12em;
+  }
+
+  .meComponentContainer .aboutme {
+    width: 55%;
+  }
+
+  .meComponentContainer .inBox ul .groupBracket {
+    flex-direction: column;
+    gap:1em;
+  }
+  .emailContact {
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+    input[type="submit"]{
+      left: 309px;
+    }
+  }
+
+    
+}
+
+@media screen and (max-width: 420px) {
+
+  .meComponentContainer .aboutme {
+    font-size: 1.3rem;
+  }
+  .meComponentContainer .profilePicture .picture {
+    width: 8em;
+  }
+
+  .mainButton{
+    transform: rotate(2.5deg) scale(0.8) !important;
+    left: -60px;
+}
+.meComponentContainer .profilePicture .logosLink img {
+  width: 2rem;}
+
+  .meComponentContainer .inBox ul .insideBrackets .items {
+    margin-left: 1.7em;}
+    .meComponentContainer .profilePicture {
+      width: 35%;
+    }
+    .meComponentContainer .aboutme {
+      width: 60%;
+    }
+
+    .meComponentContainer .inBox ul .insideBrackets .items img {
+      left: -28px !important;
+    }
+    .meComponentContainer .inBox ul li {
+      background-position: left 5px;
+      background-size: 18px;
+      padding-left: 15px;
+    }
+    .meComponentContainer .inBox ul .insideBrackets {
+      display: flex;
+      background-position: 0px 50px;}
+}
+
+
+@media screen and (max-width: 380px) {
+  .meComponentContainer .profilePicture {
+    width: 31%;
+    transform: scale(0.9);
+  }
+
+  .meComponentContainer .aboutme {
+    font-size: 1.2rem;
+  }
+  .emailContact {
+    transform: rotate(-2deg) scale(0.85);
+  }
+}

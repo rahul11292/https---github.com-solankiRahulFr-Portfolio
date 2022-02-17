@@ -1,0 +1,140 @@
+@import "./../../var.scss";
+.projects{
+    height: 80%;
+    display: flex;
+    gap:2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .note{
+        position: absolute;
+        bottom: 25px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: skew(5deg, 1deg);
+    }
+    .points{
+        display: flex;
+        align-items: flex-start;
+        transform: rotate(2deg);
+        p{
+            font-size: 1.6rem;
+            margin: 0px;
+        }
+        p.project{
+                color:$colorTextBlue;
+                font-size: 1.4rem;
+        }
+        p.techStack{
+            color:$colorTextGreen;
+            font-size: 1.4rem;
+    }
+    }
+
+    .imagesBox{
+        margin-left: 2rem;
+        position: relative;
+        svg{
+            transform: skew(5deg, 2deg);
+        }
+        .imageWeb{
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            cursor: pointer;
+            font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+            
+            img{
+                width: 100px;
+                transition: 0.2s ease-in-out;
+            }
+            &:hover img{
+                width: 110px;
+                transition: 0.2s ease-in-out;
+            }
+        }
+        .imageMobile{
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            left: 30px;
+            top: 90px;
+            cursor: pointer;
+            font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+            
+            img{
+                width: 40px;
+                transition: 0.2s ease-in-out;
+            }
+            &:hover img{
+                width: 45px;
+                transition: 0.2s ease-in-out;
+            }
+        }
+        
+    }
+    .images::before {
+        display: inline-flex;
+        content: "";
+      
+        /* Using the background-image and
+             its related properties to add
+             the SVG content */
+        background-image: url("./../../images/arroweducation2.svg");
+        background-size: 70px 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        width: 70px;
+        position: absolute;
+        position: absolute;
+    left: -51px;
+    top: -39px;
+    transform: rotate(-16deg) skew(5deg, -8deg);
+      }
+}
+
+
+
+
+//////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1007px) and (min-width: 641px){
+    
+  }
+  
+  @media screen and (max-width: 640px) {
+    
+  }
+  
+  @media screen and (max-width: 420px) {
+  
+  
+  }
+  
+  @media screen and (max-width: 380px){
+     .points:first-child .content{
+        width: 40%;
+      }
+    .projects {
+        gap: 1rem;}
+        .projects .points p {
+            font-size: 1.2rem;
+            margin: 0px;
+          }
+          .projects .points p.project, .projects .points p.techStack {
+            font-size: 1rem;
+          }
+          .projects .imagesBox {
+            margin-left: 0.3rem;
+            transform: scale(0.75);}
+  }

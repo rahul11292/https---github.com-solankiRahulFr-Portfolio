@@ -1,0 +1,166 @@
+@import './../var.scss';
+
+.headingMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-family: 'Caveat', cursive;
+        color: rgb(29, 29, 29);
+        font-size: 40px;
+        margin: 5px 10px;
+        font-weight: 500;
+    }
+    #HeadingLogo {
+        img {
+            width: 3.7rem;
+            height: inherit;
+            margin-top:2px;
+            opacity: 0.8;
+        }
+    }
+   
+    
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        gap:20px;
+        justify-content: center;
+        align-self: center;
+        margin-right: 1em;
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+            transform: rotate(-3deg);
+            & li:first-child{
+                margin-top: -5px;
+            }
+            & li:nth-child(2){
+                margin-top: 5px;
+            }
+            & li:last-child{
+                margin-top: 15px;
+            }
+           
+        }
+        a{
+            font-family: 'Caveat', cursive;
+            color: rgb(29, 29, 29); 
+            font-size: 1.6em;  
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            
+        }
+        
+        .group {
+            
+            a+svg{
+            position:absolute;
+            bottom:-15px;
+            display:flex;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+            max-width: 90px !important;
+            min-width: 30px !important;
+            path{
+                fill:transparent;
+                stroke: $colorTextRed;
+                stroke-width: 3;
+                stroke-linecap: square;
+            }
+            
+
+        }
+        .c-nav__item a+svg path{
+            stroke-dashoffset: 1100;
+            stroke-dasharray: 100;
+            transition: 0.4s ease-in-out;
+        }
+        .c-nav__item:hover a+svg path{
+            stroke-dashoffset: 1005;
+           transition: 0.4s ease-in-out;
+        }
+        .c-nav__item{
+            
+            position :relative;
+        }
+         
+        
+    }
+
+    .c-nav__item a svg {
+        fill: none;
+        stroke: $colorTextRed;
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+        stroke-dasharray: 338;
+        stroke-dashoffset: 338;
+        stroke-linecap: round;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% + 35px);
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+      }
+      
+      .c-nav__item a.active{
+
+      }
+      .c-nav__item a.active svg {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) {
+    .headingMain .menu ul {
+        padding:0px;
+        gap: 1.5rem;
+    }
+    .headingMain .menu a{
+        font-size: 1.2em;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 380px) {
+    .headingMain .menu a {
+        font-size: 1em;
+      }
+}

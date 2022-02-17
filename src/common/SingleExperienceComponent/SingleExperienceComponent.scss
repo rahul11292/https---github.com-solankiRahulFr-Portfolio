@@ -1,0 +1,78 @@
+@import './../../var.scss';
+.experienceMain{
+    position:relative;
+    width: 22em;
+    .circle{
+        position:absolute;
+        top: -50px;
+    left: 0px;
+        svg{
+            position:absolute;
+            top: 11px;
+    left: -15px;
+        }
+        h1{
+            font-size: 1.6rem;
+            color: $colorTextBlue;
+        }
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////
+
+.experienceMain{
+   
+    .box{
+        
+        .position{
+            font-size: 1.6rem ;
+            color: $colorTextBlue;
+            position:absolute;
+            top:-32px;
+            left:35px;
+            p{
+                margin: 0px;
+                padding:0px
+            }
+        }
+        svg{
+            position:absolute;
+            top: 0px;
+        }
+
+        .details{
+            padding: 0.7rem;
+
+            p{
+                margin: 0px;
+                padding:0px;
+                font-size: 1.4rem ;
+                text-align: center;
+            }
+            p.date{
+                font-size: 1rem ;
+                color:$colorTextGreen;
+                font-weight: 600;
+            }
+
+            .discription{
+                padding-top: 0.4em;
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    overflow-wrap: break-word;
+                    li {
+                      display: block;
+                      font-size: 1.3rem ;
+                      background-image: url("./../../images/star.svg");
+                      background-repeat: no-repeat;
+                      background-position: left 4px;
+    background-size: 20px;
+    padding-left: 20px;
+                    }}
+            }
+        }
+    }
+
+}

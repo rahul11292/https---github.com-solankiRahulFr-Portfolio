@@ -1,0 +1,46 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(100vh - 175px);
+}
+
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+    polyline{
+        display:none;
+    }
+}
+.image-gallery-left-nav::after{
+    content: "";
+    background-image: url("./../../images/arrowNavLeft.svg");
+  background-size: 50px 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+    top: 50%;
+}
+
+.image-gallery-right-nav::after{
+    content: "";
+    background-image: url("./../../images/arrowNavRight.svg");
+  background-size: 50px 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+    top: 50%;
+}
+
+.closeButtonModal{
+    background: transparent;
+    border:none;
+    margin-left: auto; 
+    margin-right: 0px;
+    cursor: pointer;
+    display: block;
+    img{
+        width:25px;
+    }
+}

@@ -1,0 +1,196 @@
+@import "./../../var.scss";
+.skillComponentMain {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  height: 85%;
+  h1 {
+    margin: 0px;
+    margin-bottom: 0.3em;
+    text-align: center;
+    color: $colorTextGreen;
+  }
+  .Skills,
+  .languages {
+    position: relative;
+    width: 17rem;
+    //     h1{
+    //         position: absolute;
+    //         top:0px;
+    //         top: -72px;
+    // left: 78px;
+    // color:$colorTextGreen;
+    //     }
+    ul {
+      margin: 0px;
+      padding: 0px;
+      overflow-wrap: break-word;
+      text-align: center;
+      li.highlighSkills {
+        color: $colorTextBlue;
+        font-weight: 500;
+      }
+      li {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: left 11px;
+        background-size: 25px;
+        padding-left: 25px;
+        font-size: 1.8rem;
+      }
+    }
+    svg {
+      position: absolute;
+      top: -10px;
+    }
+  }
+  .languages {
+    
+    //     h1{
+    //         position: absolute;
+    //         top:0px;
+    //         top: -115px;
+    // left: 78px;
+    //     }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    & > svg {
+      position: absolute;
+      top: -44px;
+      left: -40px;
+    }
+  }
+  .Competence {
+    position: relative;
+    transform: rotate(3deg) scale(1);
+    .extraInfoSkills1 {
+      img {
+        position: absolute;
+        width: 4.5em;
+        transform: skew(0deg, -23deg) matrix(0.5, -0.1, 0, 1.3, 0, 0);
+        top: 92px;
+        left: -34px;
+      }
+      p {
+        position: absolute;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 20px;
+        top: 6em;
+        left: -110px;
+        transform: rotate(-35deg);
+        font-weight: 500;
+      }
+    }
+
+    .extraInfoSkills2 {
+      img {
+        position: absolute;
+        width: 2.5em;
+        transform: matrix(0.7, 0, 0, 0.85, 0, 0);
+        top: 310px;
+        left: -18px;
+      }
+      p {
+        position: absolute;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 20px;
+        top: 13em;
+        left: -97px;
+        transform: rotate(-22deg);
+        font-weight: 500;
+
+      }
+    }
+  }
+  .lang{
+    transform: rotate(2deg);
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    .extraInfoSkills{
+        img {
+            position: absolute;
+            width: 4.5em;
+            transform: rotate(
+        -19deg
+        );
+            top: 80px;
+            left: 231px;
+            z-index: 11;
+        }
+        p {
+          position: absolute;
+          text-align: center;
+          font-size: 1.5rem;
+          line-height: 20px;
+          top: 0.1em;
+          right: -72px;
+          transform: rotate(
+      21deg
+      );
+          font-weight: 500;
+  
+        }
+      }
+  }
+}
+
+.skillComponentMain .Skills svg {
+  left: 22px;
+}
+
+
+
+//////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1007px) and (min-width: 641px){
+  .resume{
+    position: absolute;
+    bottom: 0px;
+  }
+  .skillComponentMain {
+    gap: 2rem;
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .resume{
+    position: absolute;
+    bottom: 0px;
+  }
+  .skillComponentMain {
+    gap: 2rem;
+    transform: scale(0.85);
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .skillComponentMain {
+    flex-direction: column;
+  }
+.resume{
+  bottom: -163px;
+  transform: scale(1.3);
+}
+  
+
+}
+
+@media screen and (max-width: 380px){
+  .skillComponentMain {
+    gap: 2rem;
+    transform: scale(0.75);
+  }
+  .resume{
+    bottom: -190px !important;
+  }
+}

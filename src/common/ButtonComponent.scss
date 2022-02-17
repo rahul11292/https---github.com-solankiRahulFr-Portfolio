@@ -1,0 +1,13 @@
+.mainButton{
+    transform: rotate(2.5deg) scale(1);
+    svg path:first-child{
+    transition: 0.2s ease-in-out;
+    stroke-dashoffset: 117;
+    stroke-width: 4;
+    stroke-linecap: square;
+    stroke-dasharray: 117;}
+    &:hover svg path:first-child{
+        stroke-dashoffset: 20;
+        transition: 0.2s ease-in-out;
+    }
+}
