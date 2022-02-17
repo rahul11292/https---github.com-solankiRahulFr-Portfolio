@@ -1,7 +1,6 @@
 {
   "name": "curieu",
   "version": "0.1.0",
-  "homepage": "https://solankiRahulFr.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
@@ -13,7 +12,8 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.3",
     "roughjs": "^4.5.2",
-    "sass": "^1.38.0"
+    "sass": "^1.38.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
