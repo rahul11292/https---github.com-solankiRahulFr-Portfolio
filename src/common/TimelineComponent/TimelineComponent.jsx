@@ -25,7 +25,7 @@ class TimelineComponent extends Component {
     window.addEventListener("resize", this.updateDimension);
   }
   render() {
-    if (this.props.alignment == "horizontal") {
+    if (this.props.alignment === "horizontal") {
       return (
         <div className="horizontal">
           <ReactRough renderer="svg" width={this.state.width - 150} height={30}>

@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import './StickerGeneralComponent.scss'
 export default class StickerGeneralComponent extends Component {
-  componentDidMount(){
-    console.log(this.props)
-  }
+
     render() {
         return (
 <div className={`container item${this.props.number}`}>
