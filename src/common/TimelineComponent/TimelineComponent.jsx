@@ -28,6 +28,7 @@ class TimelineComponent extends Component {
     if (this.props.alignment === "horizontal") {
       return (
         <div className="horizontal">
+          <h1>{this.state.width}, {this.state.height}</h1>
           <ReactRough renderer="svg" width={this.state.width - 150} height={30}>
             <Line
               x1={0}
@@ -63,6 +64,7 @@ class TimelineComponent extends Component {
     } else {
       return (
         <div className="vertical">
+          <h1>{this.state.width}, {this.state.height}</h1>
           <ReactRough
             renderer="svg"
             height={this.state.height - 200}
