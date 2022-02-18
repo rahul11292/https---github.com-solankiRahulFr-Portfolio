@@ -189,7 +189,9 @@ width: 21rem;
 @media screen and (max-width: 420px) {
   .meComponentContainer{
     transform: scale(0.9) !important;
+    margin-top: 0em;
 }
+
   .meComponentContainer .aboutme {
     font-size: 1.3rem;
   }
@@ -229,6 +231,7 @@ width: 21rem;
 
 
 @media screen and (max-width: 400px) {
+  
   .meComponentContainer .profilePicture {
     width: 31%;
     transform: scale(0.9);

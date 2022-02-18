@@ -261,10 +261,12 @@ height: 30px;
 }
 
 @media screen and (max-width: 420px) {
+    
     .experienceContainer{
         transform: scale(0.9);
         gap: 0px 30px;
 grid-template-columns: 50% 9% 50%;
+margin-top: -0.5rem;
     }
     .experienceContainer .downLeft , .experienceContainer .UpRight {
         transform: scale(0.75);
