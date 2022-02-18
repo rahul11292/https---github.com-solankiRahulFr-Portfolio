@@ -200,6 +200,15 @@ width: 6em;}
     transform: skew(0deg, -3deg) rotate(0deg) scale(0.75);
     position: relative;
     margin-left: -5rem;
-  top:1em;
+  top:4em;
   }
+  .buttonResume {
+    bottom: -235px !important;
+    
+}
+
+.buttonResume p{
+  font-size: 1.2rem !important;
+  margin-right: 4em !important;
+}
 }

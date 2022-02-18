@@ -165,11 +165,14 @@
   .resume{
     position: absolute;
     bottom: 0px;
+    
   }
   .skillComponentMain {
     gap: 2rem;
     transform: scale(0.85);
+    height: 97%;
   }
+  // .mainButton{margin-top: 5rem;}
 }
 
 @media screen and (max-width: 420px) {
@@ -188,7 +191,7 @@
 @media screen and (max-width: 380px){
   .skillComponentMain {
     gap: 2rem;
-    transform: scale(0.75);
+    transform: scale(0.7);
   }
   .resume{
     bottom: -190px !important;

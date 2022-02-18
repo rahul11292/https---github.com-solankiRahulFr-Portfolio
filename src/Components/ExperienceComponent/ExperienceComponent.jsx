@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ExperienceComponent.scss";
-import ReactRough, { Line  } from "react-rough";
 import StickerGeneralComponent from './../../StickerComponent/GeneralSticker/StickerGeneralComponent';
+import TimelineComponent from './../../common/TimelineComponent/TimelineComponent';
 export default class ExperienceComponent extends Component {
   constructor(props) {
     super(props);
@@ -64,23 +64,11 @@ export default class ExperienceComponent extends Component {
             bColor : "linear-gradient(180deg, #bbebff 0%, #bbebff 12%, #aadcf1 75%, #c3e5f4 100%)"
           },
       ],
-      height: window.innerHeight, 
-      width: window.innerWidth
+
     };
 
-    this.updateDimension = this.updateDimension.bind(this);
   }
 
-  updateDimension(){
-    this.setState({
-      height: window.innerHeight, 
-      width: window.innerWidth
-    });
-  }
-  
-  componentDidMount() {
-    window.addEventListener("resize", this.updateDimension);
-  }
   
   render() {
     return (
@@ -99,32 +87,12 @@ export default class ExperienceComponent extends Component {
         </div>
         <div className="timeline">
           <p className="year2016">2016</p>
-        <ReactRough className="horizontal" renderer="svg" width={this.state.width-150} height={30}>
-            <Line
-              x1={30}
-              x2={this.state.width-150}
-              y1={5}
-              y2={25}
-              stroke="#1d1d1d"
-              strokeWidth={3}
-              bowing={2}
-             
-            />
-            
-          </ReactRough>
-          <ReactRough renderer="svg" className="vartical" height={this.state.height-200} width={30}>
-            <Line
-              x1={5}
-              x2={25}
-              y1={30}
-              y2={this.state.height-200}
-              stroke="#1d1d1d"
-              strokeWidth={3}
-              bowing={2}
-             
-            />
-            
-          </ReactRough>
+          
+          <TimelineComponent alignment="horizontal"/>
+       
+          <TimelineComponent alignment="vertical"/>
+    
+          
           <p className="year2022">2022</p>
         </div>
         
@@ -144,9 +112,7 @@ export default class ExperienceComponent extends Component {
     );
   }
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimension);
-  }
+  
 }
 
 

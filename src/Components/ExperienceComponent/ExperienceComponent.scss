@@ -51,8 +51,9 @@ margin: 0 auto;
   justify-items: normal; 
   align-items: center; 
     .timeline{
-        svg:nth-child(3){
+        .vertical{
             display:none;
+            z-index: -1;
         }
         position: relative;
         width:96%;
@@ -164,10 +165,10 @@ height: 30px;
   
 //////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
 @media screen and (max-width: 1007px){
-    svg:nth-child(2){
+    .horizontal{
         display:none !important;
     }
-    svg:nth-child(3){
+    .vertical{
         display:block !important;
     }
     .timeline .year2016 {
@@ -277,17 +278,21 @@ grid-template-columns: 50% 9% 50%;
         gap: 60px 0px; 
     }
     .experienceContainer{
-        gap: 0px 50px;
+        gap: 0px 40px;
         grid-template-columns: 46% 9% 50%;}
         .timeline .year2022{
-            top:140px !important;
+            top:120px !important;
             right:-10px !important;
             font-size: 1rem;
           }
           .timeline .year2016 {
             font-size: 1rem;
-            bottom: 60px !important;
+            bottom: 100px !important;
             left:unset;
             right: 10px;
           }
+          .vertical{
+            transform: scale(1.2) rotate(3deg) !important;
+            
+        }
 }
