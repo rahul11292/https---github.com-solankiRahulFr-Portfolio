@@ -96,7 +96,7 @@
     border-color: #1d1d1d;
     border-image: url('./../../images/button.svg') 10 10 10  14 fill ;
     font-family: 'Caveat', cursive;
-    background-color: transparent;
+    background-color: #e5e5e5;
     font-size: 1.4rem;
     padding: 0px;
 height: 25px;
@@ -187,7 +187,9 @@ width: 21rem;
 }
 
 @media screen and (max-width: 420px) {
-
+  .meComponentContainer{
+    transform: scale(0.9) !important;
+}
   .meComponentContainer .aboutme {
     font-size: 1.3rem;
   }
@@ -225,7 +227,7 @@ width: 21rem;
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .meComponentContainer .profilePicture {
     width: 31%;
     transform: scale(0.9);
@@ -236,5 +238,6 @@ width: 21rem;
   }
   .emailContact {
     transform: rotate(-2deg) scale(0.85);
+    bottom: -10px;
   }
 }

@@ -103,7 +103,7 @@
   background-repeat: no-repeat;
   width: 70px;
   position: absolute;
-  right: -43px;
+  right: -75px;
   top: 31px;
 }
 
@@ -120,7 +120,7 @@
   background-repeat: no-repeat;
   width: 70px;
   position: absolute;
-  right: -59px;
+  right: -70px;
   top: 43px;
   transform: rotate(16deg);
 }
@@ -136,7 +136,7 @@
         p{
             text-align: end;
             font-size: 1.6rem;
-            color: $colorTextBlue;
+            color: $colorTextGreen;
             margin: 0px;
         }
     }
@@ -179,6 +179,7 @@
   flex-direction: column;
   gap:1em;
   align-items: start;
+  transform: rotate(-3deg) scale(0.75);
 }
 .educationContainer .academics {
   transform: skew(0deg, -3deg) rotate(0deg) scale(0.8);
@@ -191,22 +192,32 @@ left: 91px;
 width: 6em;}
 
 .educationContainer .buttonResume {
-  bottom: -210px;}
+  bottom: -200px;}
 
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 390px){
+  .educationContainer{
+    transform: rotate(-3deg) scale(0.72);
+    gap:0px;
+  }
   .educationContainer .academics {
     transform: skew(0deg, -3deg) rotate(0deg) scale(0.75);
     position: relative;
     margin-left: -5rem;
-  top:4em;
+  top:1em;
   }
   .buttonResume {
-    bottom: -235px !important;
+    bottom: -140px !important;
+    margin-left: 10em !important;
     
 }
-
+.educationContainer .certifications {
+  top: -30px;
+}
+.educationContainer .certifications p{
+  font-size: 1rem !important;
+}
 .buttonResume p{
   font-size: 1.2rem !important;
   margin-right: 4em !important;

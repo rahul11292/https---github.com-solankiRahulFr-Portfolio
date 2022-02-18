@@ -23,10 +23,13 @@ export default class HeaderComponent extends Component {
           </div>
         
         </div> */}
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.52 55.09">
+ <path d="M1049.5,535.77s2.42-12.62-62.23-11c-71,1.72-42.69,38.5-42.69,38.5s7.1,10.75,51,10.75c50,0,50.75-30.67,50.75-30.67a31.09,31.09,0,0,0-10.77-24.42" transform="translate(-939 -518.91)"/>
+</svg> */}
         <div className="menu">
         
     <div className="group">
-    <svg className="underlineSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 100 100">
+      <svg className="underlineSvg" xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 100 100">
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="black" />
@@ -38,6 +41,8 @@ export default class HeaderComponent extends Component {
       </linearGradient>
     </defs>
 </svg>
+      
+    
         <ul className="c-nav underliner">
             <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="/">About me{circleSvg()}</NavLink ></li>
             <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="skills">Skills{circleSvg()}</NavLink ></li>
@@ -57,9 +62,13 @@ export default class HeaderComponent extends Component {
 }
 
 function circleSvg(){
- return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.52 55.09">
- <path d="M1049.5,535.77s2.42-12.62-62.23-11c-71,1.72-42.69,38.5-42.69,38.5s7.1,10.75,51,10.75c50,0,50.75-30.67,50.75-30.67a31.09,31.09,0,0,0-10.77-24.42" transform="translate(-939 -518.91)"/>
+ return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 57">
+ <g>
+   <path d="M1025.55,528.28s2.42-12.12-62.23-10.56c-71,1.65-42.69,37-42.69,37s7.1,10.32,51,10.32c50,0,50.75-29.44,50.75-29.44a29.31,29.31,0,0,0-10.77-23.45" transform="translate(-913 -511)"/>
+   <rect width="115" height="57" style={{fill: "none", strokeWidth:"0px"}}/>
+ </g>
 </svg>
+
 
 }
 function createSVG(linkWidth) {
@@ -106,3 +115,4 @@ function randomizePath(linkWidth) {
 function insertAfter(el, referenceNode) {
     referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
 }
+

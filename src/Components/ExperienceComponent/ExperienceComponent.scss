@@ -170,12 +170,13 @@ height: 30px;
     }
     .vertical{
         display:block !important;
+        transform: scale(0.85);
     }
     .timeline .year2016 {
         font-size: 1.2rem !important;
         position: absolute;
         top: unset !important;
-        bottom: -56px !important;
+        bottom: -16px !important;
         transform: rotate(8deg) !important;
       }
       .timeline .year2022{
@@ -249,12 +250,19 @@ height: 30px;
 
 @media screen and (max-width: 640px) {
     .experienceContainer{
-        margin-top: 3rem;
+        margin-top: 0.5rem;
     }
+    .vertical{
+        display:block !important;
+        transform: scale(1);
+    }
+    .timeline .year2016 {
+        bottom: -56px !important;}
 }
 
 @media screen and (max-width: 420px) {
     .experienceContainer{
+        transform: scale(0.9);
         gap: 0px 30px;
 grid-template-columns: 50% 9% 50%;
     }
@@ -263,21 +271,22 @@ grid-template-columns: 50% 9% 50%;
         gap: 60px 0px; 
     }
     .timeline .year2022{
-        top:57px !important;
+        top:50px !important;
       }
       .timeline .year2016 {
     
-        bottom: 20px !important;
+        bottom: 50px !important;
         
       }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 390px){
     .experienceContainer .downLeft , .experienceContainer .UpRight {
         transform: scale(0.7);
         gap: 60px 0px; 
     }
     .experienceContainer{
+        transform: scale(0.85);
         gap: 0px 40px;
         grid-template-columns: 46% 9% 50%;}
         .timeline .year2022{
@@ -295,4 +304,5 @@ grid-template-columns: 50% 9% 50%;
             transform: scale(1.2) rotate(3deg) !important;
             
         }
+        
 }

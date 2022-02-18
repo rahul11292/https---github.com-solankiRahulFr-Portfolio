@@ -179,6 +179,10 @@
 
   .skillComponentMain {
     flex-direction: column;
+    gap: 2rem;
+    transform: scale(0.7);
+    justify-content: end;
+    margin-top: -5.5em;
   }
 .resume{
   bottom: -163px;
@@ -191,9 +195,11 @@
 @media screen and (max-width: 380px){
   .skillComponentMain {
     gap: 2rem;
-    transform: scale(0.7);
+    transform: scale(0.6);
+    justify-content: end;
+    margin-top: 0.5em;
   }
   .resume{
-    bottom: -190px !important;
+    bottom: -70px !important;
   }
 }

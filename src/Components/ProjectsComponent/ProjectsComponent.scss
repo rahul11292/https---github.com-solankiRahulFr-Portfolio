@@ -117,15 +117,17 @@
   }
   
   @media screen and (max-width: 420px) {
-  
+    .projects {
+        transform: scale(0.9);}
   
   }
   
-  @media screen and (max-width: 380px){
+  @media screen and (max-width: 390px){
      .points:first-child .content{
         width: 40%;
       }
     .projects {
+        transform: scale(0.9);
         gap: 1rem;}
         .projects .points p {
             font-size: 1.2rem;

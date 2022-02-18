@@ -1,12 +1,26 @@
 
 import ReactRough, { Rectangle } from "react-rough";
 import './ButtonComponent.scss';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import resumeFile from './../images/RahuL_Resume_2022_FrontEnd_english.pdf'
+import { saveAs } from 'file-saver';
 export default function ButtonComponent(props) {
+function downloadFile(){
+  fetch(resumeFile, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/pdf',
+    },
+  })
+  .then((response) => response.blob())
+  .then((blob) => {
+    saveAs(blob, "RahuL_Resume_2022_FrontEnd_english.pdf")
+    })
 
+}
 
   return (
-    <Link to="./../images/RahuL_Resume_2022_FrontEnd_english.pdf" target="_blank" download>
+    <button onClick={downloadFile} className="buttonForDownload">
     <div className="mainButton" style={{position:"relative", cursor:"pointer", width:props.width, height:"50px"}}>
       <h3 style={{fontSize:props.size,position:"absolute", top: "8px",left: "15px",margin: "0px", color:"#1d1d1d"}}>{props.label}</h3>
       <ReactRough
@@ -29,6 +43,6 @@ export default function ButtonComponent(props) {
   />
       </ReactRough>
     </div>
-    </Link>
+    </button>
   );
 }

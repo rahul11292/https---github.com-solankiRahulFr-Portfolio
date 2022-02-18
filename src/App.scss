@@ -98,16 +98,16 @@ button{
 @media screen and (max-width: 640px) {
 
   .App{
-      transform: scale(0.85);
+    
       margin: 0em 0.5em;
       filter: blur(0px);
-      margin-top: -3em;
   }
   .headingMain .menu a {
     line-height: 12px;
     display: flex;
     justify-content: center;
     text-align: center;}
+   
 
 
 }
