@@ -96,7 +96,7 @@
     border-color: #1d1d1d;
     border-image: url('./../../images/button.svg') 10 10 10  14 fill ;
     font-family: 'Caveat', cursive;
-    background-color: #eeeeee;
+    background-color: transparent;
     font-size: 1.4rem;
     padding: 0px;
 height: 25px;
@@ -172,7 +172,7 @@ width: 21rem;
   .emailContact {
     position: absolute;
     bottom: -20px;
-    left: 10px;
+
     input[type="submit"]{
       left: 309px;
     }
@@ -228,7 +228,7 @@ width: 21rem;
       background-position: 0px 50px;}
       .emailContact {
         position: absolute;
-        bottom: 175px;}
+        bottom: 10px;}
 }
 
 
@@ -246,5 +246,36 @@ width: 21rem;
   .emailContact {
     transform: rotate(-2deg) scale(0.85);
 
+  }
+}
+
+
+
+@media screen and (max-width: 360px) {
+  .meComponentContainer .profilePicture {
+    width: 31%;
+    transform: scale(0.9);
+  }
+  .meComponentContainer .aboutme {
+    font-size: 1rem;
+
+  }
+  .meComponentContainer .profilePicture .logosLink {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;}
+}
+@media screen and (max-width: 340px) {
+  .meComponentContainer .profilePicture {
+
+    transform: scale(0.75);
+  }
+  .emailContact {
+    transform: rotate(-2deg) scale(0.75);
+    width: 20rem;
+
+  }
+  .mainButton{
+    top:50px;
   }
 }

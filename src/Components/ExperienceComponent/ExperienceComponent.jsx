@@ -86,14 +86,14 @@ export default class ExperienceComponent extends Component {
                   
         </div>
         <div className="timeline">
-          <p className="year2016">2016</p>
+          
           
           <TimelineComponent alignment="horizontal"/>
        
           <TimelineComponent alignment="vertical"/>
     
           
-          <p className="year2022">2022</p>
+          
         </div>
         
         <div className="downLeft">

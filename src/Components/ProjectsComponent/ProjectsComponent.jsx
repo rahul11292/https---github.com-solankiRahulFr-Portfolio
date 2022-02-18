@@ -34,6 +34,8 @@ export default class ProjectsComponent extends Component {
     return (
       <div className="projects">
         <div className="points">
+          <div className="pointAndLine">
+
           <ReactRough renderer="svg" width={30} height={30}>
             <Ellipse
               height={10}
@@ -50,6 +52,7 @@ export default class ProjectsComponent extends Component {
             <p>Working on an application from UI to front end and back end</p>
             <p className="project">IDEM a buisness and individual identity</p>
             <p className="techStack">Tech. stack - HTML, SCSS, React, Nodejs, MongoDB, React Native, jest</p>
+          </div>
           </div>
           <div className="imagesBox">
           <ReactRough renderer="svg" width={200} height={200}>
@@ -73,6 +76,8 @@ export default class ProjectsComponent extends Component {
           
         </div>
         <div className="points">
+        <div className="pointAndLine">
+
           <ReactRough renderer="svg" width={30} height={30}>
             <Ellipse
               height={10}
@@ -88,6 +93,7 @@ export default class ProjectsComponent extends Component {
           <div className="content">
             <p>Two more ideas on the way</p>
           </div>
+        </div>
         </div>
         <div>
         <ButtonComponent label="SO.. resume ?" width={180} size="1.9rem"/>

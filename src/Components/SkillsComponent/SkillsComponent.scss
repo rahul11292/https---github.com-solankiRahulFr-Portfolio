@@ -202,3 +202,33 @@
     bottom: -170px !important;
   }
 }
+
+
+@media screen and (max-width: 420px) and (max-height: 730px){
+  .skillComponentMain {
+    transform: scale(0.6);
+    margin-top: -2.5em;}
+    
+}
+
+
+@media screen and (max-width: 360px){
+  .skillComponentMain {
+    margin-top: -1em;
+    gap: 2rem;
+    transform: scale(0.55);
+    justify-content: end;
+  }
+  .resume{
+    bottom: -140px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 340px){
+ 
+  .resume{
+    bottom: -80px !important;
+  }
+}

@@ -28,7 +28,7 @@ class TimelineComponent extends Component {
     if (this.props.alignment === "horizontal") {
       return (
         <div className="horizontal">
-          <h1>{this.state.width}, {this.state.height}</h1>
+          <p className="year2016">2016</p>
           <ReactRough renderer="svg" width={this.state.width - 150} height={30}>
             <Line
               x1={0}
@@ -40,6 +40,7 @@ class TimelineComponent extends Component {
               bowing={2}
             />
           </ReactRough>
+          <p className="year2022">2022</p>
           <div className="dashes">
             {this.state.dash.map((x) => {
               return (
@@ -64,7 +65,7 @@ class TimelineComponent extends Component {
     } else {
       return (
         <div className="vertical">
-          <h1>{this.state.width}, {this.state.height}</h1>
+          <p className="year2016">2016</p>
           <ReactRough
             renderer="svg"
             height={this.state.height - 200}
@@ -80,6 +81,7 @@ class TimelineComponent extends Component {
               bowing={2}
             />
           </ReactRough>
+          <p className="year2022">2022</p>
           <div className="dashes">
             {this.state.dash.map((x) => {
               return (
