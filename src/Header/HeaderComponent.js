@@ -44,11 +44,11 @@ export default class HeaderComponent extends Component {
       
     
         <ul className="c-nav underliner">
-            <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="/">About me{circleSvg()}</NavLink ></li>
-            <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="skills">Skills{circleSvg()}</NavLink ></li>
-            <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="education">Education{circleSvg()}</NavLink ></li>
-            <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="experience">Experience{circleSvg()}</NavLink ></li>
-            <li className="c-nav__item"><NavLink className={({ isActive }) => isActive? "active": ''} to="projects">Projects{circleSvg()}</NavLink ></li>
+            <li className="c-nav__item"><NavLink className={function ({ isActive }) { return isActive? "active": ''} } to="/">About me{circleSvg()}</NavLink ></li>
+            <li className="c-nav__item"><NavLink className={function ({ isActive }) { return isActive? "active": ''} } to="skills">Skills{circleSvg()}</NavLink ></li>
+            <li className="c-nav__item"><NavLink className={function ({ isActive }) { return isActive? "active": ''} } to="education">Education{circleSvg()}</NavLink ></li>
+            <li className="c-nav__item"><NavLink className={function ({ isActive }) { return isActive? "active": ''} } to="experience">Experience{circleSvg()}</NavLink ></li>
+            <li className="c-nav__item"><NavLink className={function ({ isActive }) { return isActive? "active": ''} } to="projects">Projects{circleSvg()}</NavLink ></li>
             {/* <li className="c-nav__item"><a href="#">No Bulls*it blogs</a></li> */}
         </ul>
     </div>

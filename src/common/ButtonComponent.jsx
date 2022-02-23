@@ -12,8 +12,8 @@ function downloadFile(){
       'Content-Type': 'application/pdf',
     },
   })
-  .then((response) => response.blob())
-  .then((blob) => {
+  .then(function (response) {return response.blob()})
+  .then(function (blob) {
     saveAs(blob, "RahuL_Resume_2022_FrontEnd_english.pdf")
     })
 

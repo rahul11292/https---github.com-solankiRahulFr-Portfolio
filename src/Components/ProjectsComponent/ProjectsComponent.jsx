@@ -16,7 +16,7 @@ export default class ProjectsComponent extends Component {
         }
     }
 
-    openModal = (val) => {
+    openModal = function (val){
         if(val){
                 this.setState({
                     web:true
@@ -49,9 +49,9 @@ export default class ProjectsComponent extends Component {
             />
           </ReactRough>
           <div className="content">
-            <p>Working on an application from UI to front end and back end</p>
-            <p className="project">IDEM a buisness and individual identity</p>
-            <p className="techStack">Tech. stack - HTML, SCSS, React, Nodejs, MongoDB, React Native, jest</p>
+            <p>Working on an application from UI to Front end and Back end</p>
+            <p className="project">IDEM is a business and individual identity app</p>
+            <p className="techStack">Tech. stack - HTML, SCSS, React, Nodejs, MongoDB, React Native</p>
           </div>
           </div>
           <div className="imagesBox">
@@ -66,10 +66,10 @@ export default class ProjectsComponent extends Component {
           bowing={2.5}
         />
       </ReactRough>
-      <button className="imageWeb" onClick={()=>this.openModal(true)}>
+      <button className="imageWeb" onClick={function (){return this.openModal(true)}}>
          <img src={IdemWeb} alt="web imsges" /> web
       </button>
-      <button className="imageMobile" onClick={()=>this.openModal(false)}>
+      <button className="imageMobile" onClick={function (){return this.openModal(false)}}>
          mobile <img src={idemMobile} alt="web imsges" /> 
       </button>
           </div>
