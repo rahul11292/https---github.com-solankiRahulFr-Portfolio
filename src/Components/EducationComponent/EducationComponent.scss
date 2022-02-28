@@ -148,6 +148,10 @@
 
 
 //////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1300px){
+  .educationContainer {
+    transform: scale(0.9);
+}}
 @media screen and (max-width: 1007px) and (min-width: 641px){
   .educationContainer {
     height: 83%;

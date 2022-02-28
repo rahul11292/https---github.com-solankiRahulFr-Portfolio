@@ -87,8 +87,8 @@
 
 .emailContact{
   position: absolute;
-  bottom: 30px;
-  right: 10px;
+  bottom: 35px;
+  right: 15px;
   transform: rotate(-2deg) scale(1);
   input[type="email"]{
     border-style: solid;
@@ -136,6 +136,13 @@ width: 21rem;
 
 
 //////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1300px){
+  .meComponentContainer .aboutme {
+    font-size: 1.8rem;
+    gap:2em;
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1007px) and (min-width: 641px){
   .meComponentContainer .aboutme {
     font-size: 1.6rem;

@@ -164,6 +164,10 @@ height: 30px;
 
   
 //////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1300px){
+    .experienceContainer {
+        transform: scale(0.8);}
+}
 @media screen and (max-width: 1007px){
     .horizontal{
         display:none !important;
@@ -204,6 +208,7 @@ height: 30px;
       align-content: center; 
       justify-items: normal; 
       align-items: center; 
+      transform: scale(1);
 }
 .experienceContainer .UpRight, .experienceContainer .downLeft{
     display: grid; 

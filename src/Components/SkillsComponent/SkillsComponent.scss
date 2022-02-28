@@ -150,6 +150,11 @@
 
 
 //////////////////////////////////////////////////////////////RESPONSIVE///////////////////////////////
+@media screen and (max-width: 1300px){
+  .skillComponentMain {
+    transform: scale(0.9);
+  }
+}
 @media screen and (max-width: 1007px) and (min-width: 641px){
   .resume{
     position: absolute;
