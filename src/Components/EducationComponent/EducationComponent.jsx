@@ -5,6 +5,9 @@ import cloud from './../../images/cloud2.svg'
 import bracket from './../../images/bracketsCurlyone.svg'
 import ButtonComponent from './../../common/ButtonComponent';
 export class EducationComponent extends Component {
+  componentDidMount(){
+    console.log(window.innerWidth, window.innerHeight)
+  }
   render() {
     return (
       <div className="educationContainer">

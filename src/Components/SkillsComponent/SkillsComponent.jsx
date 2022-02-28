@@ -7,6 +7,9 @@ import bracketsone2 from "./../../images/bracketsCurlyone2.svg";
 import arrow from "./../../images/arrowLang.svg";
 import ButtonComponent from './../../common/ButtonComponent';
 export default class SkillsComponent extends Component {
+  componentDidMount(){
+    console.log(window.innerWidth, window.innerHeight)
+  }
   render() {
     return (
       <div className="skillComponentMain">
