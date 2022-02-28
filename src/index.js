@@ -26,3 +26,11 @@ window.addEventListener('wheel', function(e) {
   
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 });
+
+window.addEventListener('touchmove', function(e) {
+  var x = document.getElementById("toast")
+  x.innerHTML = `<div id="desc">Switch to next page nothing to scroll :)</div>`
+  x.className = "show";
+  
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+});
