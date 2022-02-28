@@ -76,7 +76,7 @@ function allEducation(){
           </div>
           <div className="Grad">
           <div className="details">
-              <h1>Bachlorate of Technology</h1>
+              <h1>Bachelor's of Technology</h1>
               <p className="date">2010-2014</p>
               <p className="place">(Sir Padampat Singhania University, Udaipur)</p>
               <p className="deep">

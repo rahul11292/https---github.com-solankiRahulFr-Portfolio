@@ -25,20 +25,22 @@ export default class SkillsComponent extends Component {
             </p>
             <img src={bracketsone2} alt="" />
           </div>
-          <h1>Compétence</h1>
+          <h1>Tech</h1>
           {skillsUIBlock()}
         </div>
         <div className="lang">
           <div>
             <div className="extraInfoSkills">
               <p>
+              currently
+                <br />
                 learning
                 <br />
                 please wait
               </p>
               <img src={arrow} alt="" />
             </div>
-            <h1 style={{ marginBottom: "1.2em" }}>languages</h1>
+            <h1 style={{ marginBottom: "1.2em" }}>Languages</h1>
             {languagesUI()}
           </div>
           <div>

@@ -3,8 +3,8 @@ import ReactRough, {Ellipse } from "react-rough";
 export default function RatingComponent(props) {
   return <div style={{display:"flex", gap:"26px", position:"relative", top:"-5px"}}>
 {
-    props.rate.map((i, index) => 
-    <div key={index}>
+    props.rate.map(function (i, index)
+    {return <div key={index}>
 
     <ReactRough renderer="svg" width={30} height={30}>
     <Ellipse
@@ -22,7 +22,7 @@ export default function RatingComponent(props) {
       hachureGap= {6}
     />
   </ReactRough>
-    </div>
+    </div>}
     )
   }
   </div> 
