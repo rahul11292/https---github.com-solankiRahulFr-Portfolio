@@ -42,7 +42,7 @@ class TimelineComponent extends Component {
           </ReactRough>
           <p className="year2022">2022</p>
           <div className="dashes">
-            {this.state.dash.map((x) => {
+            {this.state.dash.map(function (x) {
               return (
                 <ReactRough renderer="svg" width={5} height={25} key={x}>
                   <Line
@@ -83,7 +83,7 @@ class TimelineComponent extends Component {
           </ReactRough>
           <p className="year2022">2022</p>
           <div className="dashes">
-            {this.state.dash.map((x) => {
+            {this.state.dash.map(function (x) {
               return (
                 <ReactRough renderer="svg" width={20} height={5} key={x}>
                   <Line
