@@ -210,3 +210,14 @@
     
         gap: 0.85rem;}
 }
+
+
+
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+         .headingMain{
+             display:none;
+         }
+    }
+}
