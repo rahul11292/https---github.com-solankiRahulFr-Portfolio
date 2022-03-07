@@ -214,10 +214,11 @@
 
 
 
-@media not all and (min-resolution:.001dpcm) { 
-    @supports (-webkit-appearance:none) {
-         .headingMain{
-             display:none;
-         }
-    }
-}
+// @media not all and (min-resolution:.001dpcm) { 
+//     @supports (-webkit-appearance:none) {
+//         .headingMain .menu .group .c-nav__item {
+//             position: relative;
+//             margin-left: 2rem;
+//         }
+//     }
+// }
