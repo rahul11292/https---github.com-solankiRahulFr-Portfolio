@@ -60,8 +60,8 @@ export default class MeComponent extends Component {
             <ul>
               <li>I am Rahul Solanki</li>
               <li>
-              I have experience of 4.5 years, from mechanical design
-                engineer to Front End development
+              I have experience of 4.5 years, from Mechanical Design
+                Engineer to Front End development
               </li>
               <div className="groupBracket">
                 <li className="insideBrackets">
@@ -89,7 +89,7 @@ export default class MeComponent extends Component {
                     />
                     <p>a lot curious</p>
                     <p>little innovative</p>
-                    <p>little creative</p>
+                    <p>quite creative</p>
                     <p>always learning</p>
                   </div>
                 </li>

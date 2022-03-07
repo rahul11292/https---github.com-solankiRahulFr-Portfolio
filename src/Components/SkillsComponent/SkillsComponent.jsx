@@ -16,7 +16,7 @@ export default class SkillsComponent extends Component {
         <div className="Competence">
           <div className="extraInfoSkills1">
             <p>
-              professionaly <br />
+            professionally <br />
               worked on
             </p>
             <img src={bracketsone} alt="" />
@@ -75,7 +75,7 @@ function skillsUIBlock() {
 
       <ul>
         <li className="highlighSkills">HTML, CSS, SCSS</li>
-        <li className="highlighSkills">Javascript</li>
+        <li className="highlighSkills">Javascript, Typescript</li>
         <li className="highlighSkills">React, Angular, Vue</li>
         <li className="highlighSkills">Python</li>
         <li className="highlighSkills">PYQT5</li>
@@ -122,9 +122,9 @@ function languagesUI() {
 function learning() {
   return (
     <div className="Skills">
-      <ReactRough renderer="svg" width={260} height={130}>
+      <ReactRough renderer="svg" width={260} height={100}>
         <Rectangle
-          height={120}
+          height={90}
           width={250}
           x={3}
           y={3}
@@ -137,7 +137,7 @@ function learning() {
       <ul>
         <li>React Native Animation</li>
         <li>Docker</li>
-        <li>MySQL</li>
+        {/* <li>MySQL</li> */}
       </ul>
     </div>
   );

@@ -37,7 +37,7 @@ export class EducationComponent extends Component {
                   <p className="main">Solidworks</p>
                 </div>
                 <div className="single">
-                  <p className="main">Creo elemnt / Pro 5.0 PTC</p>
+                  <p className="main">Creo element / Pro 5.0 PTC</p>
                 </div>
               </div>
         </div>
@@ -59,8 +59,8 @@ function allEducation(){
             <div className="details">
               <h1>Post graduation diploma</h1>
               <p className="date">2014-2015 </p>
-              <p className="place">(Suvidya Institute of technology, Mumbai)</p>
-              <p>Piping Design Engineering</p>
+              <p className="place">Mumbai, India</p>
+              <p className="deep">Piping Design Engineering</p>
               <p className="deep">SP3D piping, autocad, Caesar II</p>
             </div>
 
@@ -81,7 +81,7 @@ function allEducation(){
           <div className="details">
               <h1>Bachelor's of Technology</h1>
               <p className="date">2010-2014</p>
-              <p className="place">(Sir Padampat Singhania University, Udaipur)</p>
+              <p className="place">Udaipur, India</p>
               <p className="deep">
                 Mechanical Engineering<br/>Autocad, Creo pro-e, Matlab, C++
               </p>
@@ -93,9 +93,9 @@ function allEducation(){
             <div className="details">
               <h1>High School</h1>
               <p className="date">2010</p>
-              <p className="place">(Central School, Udaipur)</p>
+              <p className="place">Udaipur, India</p>
               <p className="deep">
-                Physics, chemistry, Mathematics,<br/>computer science(C++)
+                Physics, Chemistry, Mathematics,<br/>Computer Science(C++)
               </p>
             </div>
 

@@ -51,7 +51,7 @@ export default class ProjectsComponent extends Component {
           <div className="content">
             <p>Working on an application from UI to front end and back end</p>
             <p className="project">IDEM a buisness and individual identity</p>
-            <p className="techStack">Tech. stack - HTML, SCSS, React, Nodejs, MongoDB, React Native, jest</p>
+            <p className="techStack">Tech. stack - HTML, SCSS, React, Nodejs, MongoDB, React Native</p>
           </div>
           </div>
           <div className="imagesBox">
