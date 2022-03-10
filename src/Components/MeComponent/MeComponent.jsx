@@ -19,7 +19,7 @@ export default class MeComponent extends Component {
   sendEmail(e) {
     e.preventDefault();
     let emailInput = document.getElementById("email");
-    if(emailInput.value && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
+    if(emailInput.value && (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(emailInput.value)){ //eslint-disable-line
       emailjs
       .sendForm(
         "service_m26lvug",
@@ -30,6 +30,7 @@ export default class MeComponent extends Component {
       .then(
         function(result) {
           emailInput.value = ""
+          emailInput.classList.remove("emailNotSent")
           emailInput.classList.add("emailSent")
           emailInput.placeholder = "Thanks! I will mail you ASAP"
           // this.inputMail.current.value=""
