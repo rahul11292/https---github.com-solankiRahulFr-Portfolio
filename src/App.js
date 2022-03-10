@@ -7,7 +7,7 @@ import MeComponent from "./Components/MeComponent/MeComponent";
 import SkillsComponent from "./Components/SkillsComponent/SkillsComponent";
 import ExperienceComponent from "./Components/ExperienceComponent/ExperienceComponent";
 import ProjectsComponent from "./Components/ProjectsComponent/ProjectsComponent";
-import React, {useEffect} from "react";
+import React from "react";
 import  EducationComponent  from './Components/EducationComponent/EducationComponent';
 function App() {
 // useEffect(()=>{

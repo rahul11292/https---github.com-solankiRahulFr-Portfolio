@@ -109,6 +109,14 @@ width: 21rem;
       color:red;
       opacity: 0.75;
     }
+    &.emailSent::placeholder{
+      color:green;
+      opacity: 1;
+    }
+    &.emailNotSent::placeholder{
+      color:red;
+      opacity: 1;
+    }
   }
   input[type="submit"]{
     position: absolute;

@@ -18,7 +18,9 @@ export default class MeComponent extends Component {
   }
   sendEmail(e) {
     e.preventDefault();
-    emailjs
+    let emailInput = document.getElementById("email");
+    if(emailInput.value && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)){
+      emailjs
       .sendForm(
         "service_m26lvug",
         "template_tk9vkbt",
@@ -27,15 +29,26 @@ export default class MeComponent extends Component {
       )
       .then(
         function(result) {
-          this.inputMail.current.value=""
-          this.inputMail.current.placeholder = "Thanks! I will mail you ASAP"
+          emailInput.value = ""
+          emailInput.classList.add("emailSent")
+          emailInput.placeholder = "Thanks! I will mail you ASAP"
+          // this.inputMail.current.value=""
+          // this.inputMail.current.placeholder = "Thanks! I will mail you ASAP"
 
         },
         function (error) {
-          this.inputMail.current.value=""
-          this.inputMail.current.placeholder = "Please try again. Something is bad"
+          emailInput.value=""
+          emailInput.classList.add("emailNotSent")
+          emailInput.placeholder = "Please try again. Something is bad"
         }
       );
+    }
+    else{
+      emailInput.value=""
+      emailInput.classList.add("emailNotSent")
+      emailInput.placeholder = "Please Enter a correct mail"
+    }
+    
   }
 
   render() {
@@ -103,6 +116,7 @@ export default class MeComponent extends Component {
         <div className="emailContact">
           <form ref={this.form} onSubmit={this.sendEmail}>
             <input
+            id="email"
               type="email"
               name="email"
               placeholder="Want to talk ? Pls send your mail ID"
