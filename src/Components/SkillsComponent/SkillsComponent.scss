@@ -113,9 +113,9 @@
   }
   .lang{
     transform: rotate(2deg);
-    display: flex;
-    flex-direction: column;
-    gap: 2.3rem;
+    display: grid;
+    grid-gap: 2.5rem;
+    gap: 2.5rem;
     .extraInfoSkills{
         img {
             position: absolute;
