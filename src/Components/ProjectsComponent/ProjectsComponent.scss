@@ -177,3 +177,17 @@
             transform: scale(0.7);
         }
   }
+
+
+  @media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .note{
+            position: absolute;
+            bottom: 20px;
+        right: 25px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transform: skew(3deg, 1deg);
+        }
+    }
+}

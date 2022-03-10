@@ -129,6 +129,9 @@
 .educationContainer{
     position: relative;
     .buttonResume{
+      display: flex;
+    flex-direction: column;
+    justify-self: center;
         transform: rotate(-2deg);
         position: absolute;
         bottom: 50px;
