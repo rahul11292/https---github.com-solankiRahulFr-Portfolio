@@ -116,10 +116,17 @@
   }
   
   @media screen and (max-width: 640px) {
-    
+    .note{
+        position: unset !important;
+        text-align: center;
+      }
   }
   
   @media screen and (max-width: 420px) {
+    .note{
+        position: unset !important;
+        text-align: center;
+      }
     .projects {
         transform: scale(0.9);
         justify-content: flex-start;}
@@ -148,7 +155,7 @@
   }
   
   @media screen and (max-width: 400px){
-
+    
     .projects {
         transform: scale(0.9);
         gap: 1rem;}
