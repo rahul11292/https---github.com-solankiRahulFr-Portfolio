@@ -75,7 +75,7 @@ export default class ProjectsComponent extends Component {
           </div>
           
         </div>
-        <div className="points">
+        {/*<div className="points">
         <div className="pointAndLine">
 
           <ReactRough renderer="svg" width={30} height={30}>
@@ -90,11 +90,11 @@ export default class ProjectsComponent extends Component {
               roughness={1}
             />
           </ReactRough>
-          {/*<div className="content">
+          <div className="content">
             <p>Two more ideas on the way</p>
-          </div> */}
+          </div> 
         </div>
-        </div>
+        </div>*/}
         <div>
         <ButtonComponent label="SO.. resume ?" width={180} size="1.9rem"/>
         </div>
