@@ -90,9 +90,9 @@ export default class ProjectsComponent extends Component {
               roughness={1}
             />
           </ReactRough>
-         // <div className="content">
-          //  <p>Two more ideas on the way</p>
-         // </div>
+          {/*<div className="content">
+            <p>Two more ideas on the way</p>
+          </div> */}
         </div>
         </div>
         <div>
